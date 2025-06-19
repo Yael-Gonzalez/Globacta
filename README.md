@@ -1,10 +1,10 @@
 #  Sistema de gestión de conferencias para el Modelo de Naciones Unidad
 
 ##  Integrantes del equipo
--Abraham Rendon Uziel Alberto
--Flores Lopez Erick Jahir
--Gonzalez Briones America Yael
--Mojica Perez German Mojica
+-Abraham Rendon Uziel Alberto\
+-Flores Lopez Erick Jahir\
+-Gonzalez Briones America Yael\
+-Mojica Perez German Mojica\
 -Solano Achotla Luis Enrique 
 
 ##  Descripción
