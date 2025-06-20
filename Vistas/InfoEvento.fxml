@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefWidth="600" spacing="20" style="-fx-padding: 28; -fx-font-family: 'Niramit'; -fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaz.interfaz.HelloApplication">
+
+    <!-- Bloque de resumen de datos -->
+    <VBox fillWidth="true" spacing="12">
+        <Label text="Nombre del evento" />
+        <TextField fx:id="nombreField" promptText="Nombre" />
+
+        <Label text="Descripción" />
+        <TextArea fx:id="descripcionField" prefRowCount="3" promptText="Muestra la descripción del evento" />
+
+        <Label text="Lugar de asamblea" />
+        <TextField fx:id="lugarField" promptText="Indica lugar del evento" />
+
+        <Label text="Fecha de Fin" />
+        <TextField fx:id="fechaFinField" promptText="Indica la fecha de finalización" />
+
+        <Label text="Fecha de Inicio" />
+        <TextField fx:id="fechaInicioField" promptText="Indica la fecha de inicio" />
+
+        <Label text="Asambleas" />
+        <TextField fx:id="asambleasField" promptText="Indica la cantidad de asambleas en ese evento" />
+    </VBox>
+
+    <!-- Contenedor de imagen con botón punteado -->
+    <VBox spacing="8" style="-fx-border-color: #000000; -fx-border-style: dashed; -fx-border-width: 2; -fx-border-radius: 6; -fx-padding: 16; -fx-background-color: #F5F9FF;">
+        <Label style="-fx-font-weight: semibold;" text="Imagen del evento" />
+        <Label style="-fx-font-size: 12px;" text="Muestra imagen para editar" />
+        <HBox spacing="10" />
+    </VBox>
+
+
+    <HBox alignment="CENTER_RIGHT" spacing="12">
+        <Button fx:id="salirBtn" text="Salir" />
+        <Button fx:id="verAsambleasBtn" style="-fx-background-color: #222222; -fx-text-fill: white; -fx-font-weight: bold;" text="Ver Asambleas Disponibles" />
+    </HBox>
+</VBox>

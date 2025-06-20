@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="24" style="-fx-padding: 28; -fx-font-family: 'Niramit'; -fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaz.interfaz.HelloApplication">
+
+
+    <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Crear nuevo evento" />
+
+    <GridPane hgap="12" vgap="12">
+        <Label style="-fx-font-weight: semibold;" text="Nombre" />
+        <TextField fx:id="nombreField" promptText="Nombre del evento" style="-fx-font-weight: light;" GridPane.columnIndex="1" />
+
+        <Label style="-fx-font-weight: semibold;" text="Lugar" GridPane.rowIndex="1" />
+        <TextField fx:id="lugarField" promptText="Lugar del evento" style="-fx-font-weight: light;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+        <Label style="-fx-font-weight: semibold;" text="Fecha de Inicio" GridPane.rowIndex="2" />
+        <TextField fx:id="fechaInicioField" promptText="Fecha de inicio del evento" style="-fx-font-weight: light;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+        <Label style="-fx-font-weight: semibold;" text="Fecha de Término" GridPane.rowIndex="3" />
+        <TextField fx:id="fechaTerminoField" promptText="Fecha de término del evento" style="-fx-font-weight: light;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+        <Label style="-fx-font-weight: semibold;" text="Descripción" GridPane.rowIndex="4" />
+        <TextArea fx:id="descripcionField" prefRowCount="3" promptText="Descripción del evento" style="-fx-font-weight: light;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <columnConstraints>
+         <ColumnConstraints />
+         <ColumnConstraints />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+      </rowConstraints>
+    </GridPane>
+
+
+    <VBox spacing="10" style="-fx-border-color: #000000; -fx-border-style: dashed; -fx-border-width: 2; -fx-border-radius: 6; -fx-padding: 16; -fx-background-color: #F5F9FF;">
+        <Label style="-fx-font-weight: semibold;" text="Importar Imagen" />
+        <Label style="-fx-font-size: 12px;" text="Inserta imagen principal del evento" />
+        <HBox spacing="10">
+            <Button fx:id="importarImagenBtn" style="-fx-background-color: #0099FF; -fx-text-fill: white;                            -fx-font-weight: bold; -fx-background-radius: 4;" text="Seleccionar imagen" />
+            <Label fx:id="imagenLabel" style="-fx-text-fill: #666666; -fx-font-style: italic;" text="Ningún archivo seleccionado" />
+        </HBox>
+    </VBox>
+
+
+    <Button fx:id="crearEventoBtn" maxWidth="Infinity" style="-fx-font-weight: bold; -fx-background-color: #0099FF; -fx-text-fill: white; -fx-background-radius: 4;" text="Crear Evento" />
+</VBox>

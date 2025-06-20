@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <HBox prefHeight="29.0" prefWidth="188.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="16.0" layoutY="14.0" prefHeight="42.0" prefWidth="169.0" text="Asambleas ">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <VBox id="5EB5F3" layoutX="30.0" layoutY="72.0" prefHeight="128.0" prefWidth="204.0" style="-fx-background-color: #5EB5F3; -fx-background-radius: 15;">
+                     <children>
+                        <AnchorPane>
+                           <children>
+                              <Label layoutX="74.0" text="nombre">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane>
+                           <children>
+                              <Label layoutX="46.0" prefHeight="32.0" prefWidth="77.0" text="Ubicacion">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="46.0" layoutY="31.0" text="Dia de la asamblea ">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="26.0" fitWidth="25.0" layoutX="11.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@imagenes/distance_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="23.0" fitWidth="29.0" layoutX="12.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@imagenes/calendar_month_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" />
+                                 </image>
+                              </ImageView>
+                              <Button alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="102.0" layoutY="66.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Abrir" textAlignment="RIGHT" />
+                              <Button alignment="TOP_RIGHT" layoutX="10.0" layoutY="66.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="Eliminar" />
+                              <ImageView fitHeight="19.0" fitWidth="17.0" layoutX="15.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@imagenes/delete_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="105.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@imagenes/arrow_forward_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane />
+                     </children>
+                  </VBox>
+                  <VBox id="5EB5F3" layoutX="30.0" layoutY="219.0" prefHeight="128.0" prefWidth="204.0" style="-fx-background-color: #5EB5F3; -fx-background-radius: 15;">
+                     <children>
+                        <AnchorPane>
+                           <children>
+                              <Label layoutX="74.0" text="nombre">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane>
+                           <children>
+                              <Label layoutX="46.0" prefHeight="32.0" prefWidth="77.0" text="Ubicacion">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="46.0" layoutY="31.0" text="Dia de la asamblea ">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="26.0" fitWidth="25.0" layoutX="11.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@imagenes/distance_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="23.0" fitWidth="29.0" layoutX="12.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@imagenes/calendar_month_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" />
+                                 </image>
+                              </ImageView>
+                              <Button alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="102.0" layoutY="66.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Abrir" textAlignment="RIGHT" />
+                              <Button alignment="TOP_RIGHT" layoutX="10.0" layoutY="66.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="Eliminar" />
+                              <ImageView fitHeight="19.0" fitWidth="17.0" layoutX="15.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@imagenes/delete_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="105.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@imagenes/arrow_forward_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </left>
+   <HBox prefHeight="29.0" prefWidth="188.0" BorderPane.alignment="CENTER">
+      <children>
+         <AnchorPane />
+         <AnchorPane prefHeight="200.0" prefWidth="200.0">
+            <children>
+               <Label layoutX="16.0" layoutY="14.0" prefHeight="42.0" prefWidth="169.0" text="Asambleas ">
+                  <font>
+                     <Font size="27.0" />
+                  </font>
+               </Label>
+               <VBox id="5EB5F3" layoutX="30.0" layoutY="72.0" prefHeight="128.0" prefWidth="204.0" style="-fx-background-color: #5EB5F3; -fx-background-radius: 15;">
+                  <children>
+                     <AnchorPane>
+                        <children>
+                           <Label layoutX="74.0" text="nombre">
+                              <font>
+                                 <Font size="21.0" />
+                              </font>
+                           </Label>
+                        </children>
+                     </AnchorPane>
+                     <AnchorPane>
+                        <children>
+                           <Label layoutX="46.0" prefHeight="32.0" prefWidth="77.0" text="Ubicacion">
+                              <font>
+                                 <Font size="16.0" />
+                              </font>
+                           </Label>
+                           <Label layoutX="46.0" layoutY="31.0" text="Dia de la asamblea ">
+                              <font>
+                                 <Font size="16.0" />
+                              </font>
+                           </Label>
+                           <ImageView fitHeight="26.0" fitWidth="25.0" layoutX="11.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                 <Image url="@imagenes/distance_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" />
+                              </image>
+                           </ImageView>
+                           <ImageView fitHeight="23.0" fitWidth="29.0" layoutX="12.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                 <Image url="@imagenes/calendar_month_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" />
+                              </image>
+                           </ImageView>
+                           <Button alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="102.0" layoutY="66.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Abrir" textAlignment="RIGHT" />
+                           <Button alignment="TOP_RIGHT" layoutX="10.0" layoutY="66.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="Eliminar" />
+                           <ImageView fitHeight="19.0" fitWidth="17.0" layoutX="15.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                 <Image url="@imagenes/delete_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" />
+                              </image>
+                           </ImageView>
+                           <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="105.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                 <Image url="@imagenes/arrow_forward_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" />
+                              </image>
+                           </ImageView>
+                        </children>
+                     </AnchorPane>
+                     <AnchorPane />
+                  </children>
+               </VBox>
+            </children>
+         </AnchorPane>
+      </children>
+   </HBox>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox id="5EB5F3" layoutX="21.0" layoutY="72.0" prefHeight="128.0" prefWidth="204.0" style="-fx-background-color: #5EB5F3; -fx-background-radius: 15;">
+               <children>
+                  <AnchorPane>
+                     <children>
+                        <Label layoutX="74.0" text="nombre">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane>
+                     <children>
+                        <Label layoutX="46.0" prefHeight="32.0" prefWidth="77.0" text="Ubicacion">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="46.0" layoutY="31.0" text="Dia de la asamblea ">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="26.0" fitWidth="25.0" layoutX="11.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/distance_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="23.0" fitWidth="29.0" layoutX="12.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/calendar_month_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" />
+                           </image>
+                        </ImageView>
+                        <Button alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="102.0" layoutY="66.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Abrir" textAlignment="RIGHT" />
+                        <Button alignment="TOP_RIGHT" layoutX="10.0" layoutY="66.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="Eliminar" />
+                        <ImageView fitHeight="19.0" fitWidth="17.0" layoutX="15.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/delete_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="105.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/arrow_forward_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane />
+               </children>
+            </VBox>
+            <VBox id="5EB5F3" layoutX="21.0" layoutY="219.0" prefHeight="128.0" prefWidth="204.0" style="-fx-background-color: #5EB5F3; -fx-background-radius: 15;">
+               <children>
+                  <AnchorPane>
+                     <children>
+                        <Label layoutX="74.0" text="nombre">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane>
+                     <children>
+                        <Label layoutX="46.0" prefHeight="32.0" prefWidth="77.0" text="Ubicacion">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="46.0" layoutY="31.0" text="Dia de la asamblea ">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="26.0" fitWidth="25.0" layoutX="11.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/distance_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="23.0" fitWidth="29.0" layoutX="12.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/calendar_month_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" />
+                           </image>
+                        </ImageView>
+                        <Button alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="102.0" layoutY="66.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Abrir" textAlignment="RIGHT" />
+                        <Button alignment="TOP_RIGHT" layoutX="10.0" layoutY="66.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="Eliminar" />
+                        <ImageView fitHeight="19.0" fitWidth="17.0" layoutX="15.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/delete_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="105.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/arrow_forward_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane />
+               </children>
+            </VBox>
+         </children></AnchorPane>
+   </center>
+</BorderPane>
