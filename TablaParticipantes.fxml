@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400" prefWidth="600" style="-fx-background-color: white;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12">
+    <children>
+        <!-- Título -->
+        <Label layoutX="30" layoutY="20" style="-fx-text-fill: black; -fx-font-weight: bold;" text="Tabla de participantes">
+            <font>
+                <Font size="24" />
+            </font>
+        </Label>
+
+        <!-- Botón arriba a la derecha (exportar o regresar) -->
+        <Button layoutX="540" layoutY="20" prefHeight="40" prefWidth="40" style="-fx-background-color: #007bff; -fx-background-radius: 20;">
+            <graphic>
+                <Label style="-fx-text-fill: white; -fx-font-size: 18;" text="↗" />
+            </graphic>
+        </Button>
+
+        <!-- Panel gris claro con tabla -->
+        <AnchorPane layoutX="14.0" layoutY="60.0" prefHeight="296.0" prefWidth="572.0" style="-fx-background-color: #d9d9e3; -fx-background-radius: 15;">
+            <children>
+                <!-- Tabla de participantes -->
+                <TableView layoutX="13.0" layoutY="30.0" prefHeight="200" prefWidth="546.0">
+                    <columns>
+                        <TableColumn prefWidth="143.0" text="Número de participante" />
+                        <TableColumn prefWidth="149.0" text="Nombre del participante" />
+                        <TableColumn prefWidth="136.0" text="Escuela que representa" />
+                        <TableColumn prefWidth="117.0" text="Rol que desempeña" />
+                    </columns>
+                </TableView>
+
+                <!-- Mensaje de instrucción -->
+                <Label layoutX="140.0" layoutY="230.0" style="-fx-text-fill: #444;" text="Selecciona dos veces el participante a editar*" />
+            </children>
+        </AnchorPane>
+
+        <!-- Botón de recarga -->
+        <Button layoutX="540" layoutY="360" prefHeight="40" prefWidth="40" style="-fx-background-color: #007bff; -fx-background-radius: 20;">
+            <graphic>
+                <Label style="-fx-text-fill: white; -fx-font-size: 18;" text="⟳" />
+            </graphic>
+        </Button>
+    </children>
+</AnchorPane>
