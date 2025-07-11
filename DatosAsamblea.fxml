@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.evento.DatosAsamblea"
+            prefWidth="600" prefHeight="400" style="-fx-background-color: #f5f7fb;">
+
+    <!-- Título -->
+    <Label layoutX="30" layoutY="20" text="Datos de la asamblea"
+           style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #1b1f3b;" />
+
+    <!-- Nombre de la asamblea -->
+    <VBox layoutX="30" layoutY="70" spacing="5" prefWidth="240" style="-fx-background-color: #f2f4f8; -fx-padding: 10; -fx-border-color: #d0d7e2; -fx-border-radius: 10; -fx-background-radius: 10;">
+        <Label text="Nombre de la asamblea" style="-fx-font-weight: bold;" />
+        <TextField fx:id="nombreAsambleaField" promptText="Indica el nombre de la asamblea" />
+    </VBox>
+
+    <!-- Fecha de la asamblea -->
+    <VBox layoutX="330" layoutY="70" spacing="5" prefWidth="240" style="-fx-background-color: #f2f4f8; -fx-padding: 10; -fx-border-color: #d0d7e2; -fx-border-radius: 10; -fx-background-radius: 10;">
+        <Label text="Fecha de la asamblea" style="-fx-font-weight: bold;" />
+        <DatePicker fx:id="fechaAsambleaPicker" promptText="Indica la fecha de la asamblea" />
+    </VBox>
+
+    <!-- Participantes -->
+    <VBox layoutX="30" layoutY="150" spacing="5" prefWidth="240" style="-fx-background-color: #f2f4f8; -fx-padding: 10; -fx-border-color: #d0d7e2; -fx-border-radius: 10; -fx-background-radius: 10;">
+        <Label text="Participantes de la asamblea" style="-fx-font-weight: bold;" />
+        <TextField fx:id="participantesField" promptText="Indica el máximo de participantes" />
+    </VBox>
+
+    <!-- Hora de inicio -->
+    <VBox layoutX="330" layoutY="150" spacing="5" prefWidth="240" style="-fx-background-color: #f2f4f8; -fx-padding: 10; -fx-border-color: #d0d7e2; -fx-border-radius: 10; -fx-background-radius: 10;">
+        <Label text="Hora de inicio de la asamblea" style="-fx-font-weight: bold;" />
+        <TextField fx:id="horaInicioField" promptText="Indica la hora de inicio" />
+    </VBox>
+
+    <!-- Lugar -->
+    <VBox layoutX="30" layoutY="230" spacing="5" prefWidth="240" style="-fx-background-color: #f2f4f8; -fx-padding: 10; -fx-border-color: #d0d7e2; -fx-border-radius: 10; -fx-background-radius: 10;">
+        <Label text="Lugar de la asamblea" style="-fx-font-weight: bold;" />
+        <TextField fx:id="lugarField" promptText="Indica el lugar de la asamblea" />
+    </VBox>
+
+    <!-- Hora de fin -->
+    <VBox layoutX="330" layoutY="230" spacing="5" prefWidth="240" style="-fx-background-color: #f2f4f8; -fx-padding: 10; -fx-border-color: #d0d7e2; -fx-border-radius: 10; -fx-background-radius: 10;">
+        <Label text="Hora de fin de la asamblea" style="-fx-font-weight: bold;" />
+        <TextField fx:id="horaFinField" promptText="Indica la hora de fin" />
+    </VBox>
+
+    <!-- Botón -->
+    <Button fx:id="editarButton" layoutX="240" layoutY="340" prefWidth="120" text="Editar asamblea"
+            style="-fx-background-color: #1b72e8; -fx-text-fill: white; -fx-background-radius: 10;" />
+</AnchorPane>
