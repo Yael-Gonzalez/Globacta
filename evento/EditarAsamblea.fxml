@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f5f7fb;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.evento.EditarAsamblea">
+
+    <children>
+        <!-- Título -->
+        <Label layoutX="201.0" layoutY="31.0" style="-fx-font-size: 26px; -fx-font-weight: bold;" text="Editar Asamblea" />
+
+        <!-- Panel principal con fondo gris claro -->
+        <AnchorPane layoutX="30.0" layoutY="97.0" prefHeight="286.0" prefWidth="540" style="-fx-background-color: #dbe0e6; -fx-background-radius: 20;">
+            <children>
+                <!-- Nombre -->
+                <Label layoutX="20" layoutY="20" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Nombre" />
+                <TextField fx:id="txtNombre" layoutX="20.0" layoutY="46.0" prefHeight="39.0" prefWidth="224.0" promptText="Nombre de asamblea" />
+
+                <!-- Fecha -->
+                <Label layoutX="280" layoutY="20" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Fecha" />
+                <TextField fx:id="txtFecha" layoutX="280" layoutY="45" prefHeight="39.0" prefWidth="241.0" promptText="Fecha de inicio asamblea" />
+
+                <!-- Participantes -->
+                <Label layoutX="20" layoutY="90" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Participantes" />
+                <TextField fx:id="txtParticipantes" layoutX="20.0" layoutY="116.0" prefHeight="39.0" prefWidth="224.0" promptText="Numero maximo de los participantes" />
+
+                <!-- Editar hora de inicio -->
+                <Label layoutX="280" layoutY="90" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Editar hora de inicio" />
+                <TextField fx:id="txtHoraInicio" layoutX="280" layoutY="115" prefHeight="39.0" prefWidth="241.0" promptText="Hora de inicio" />
+
+                <!-- Lugar -->
+                <Label layoutX="20" layoutY="160" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Lugar" />
+                <TextField fx:id="txtLugar" layoutX="20.0" layoutY="186.0" prefHeight="39.0" prefWidth="224.0" promptText="Lugar de asamblea" />
+
+                <!-- Editar hora de final -->
+                <Label layoutX="280" layoutY="160" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Editar hora de final" />
+                <TextField fx:id="txtHoraFinal" layoutX="280" layoutY="185" prefHeight="39.0" prefWidth="241.0" promptText="Hora de fin" />
+
+                <!-- Botón -->
+                <Button fx:id="btnEditarParticipantes"
+                        layoutX="331.0" layoutY="234.0"
+                        prefHeight="40" prefWidth="179.0"
+                        style="-fx-background-color: #007bff; -fx-text-fill: white; -fx-background-radius: 10;"
+                        text="Editar participantes"
+                        onAction="#onEditarParticipantes" />
+            </children>
+        </AnchorPane>
+
+        <!-- Botón de regreso -->
+        <Button fx:id="backButton"
+                graphicTextGap="10.0"
+                layoutX="28.0"
+                layoutY="24.0"
+                mnemonicParsing="false"
+                prefHeight="47.0"
+                prefWidth="49.0"
+                style="-fx-background-color: #007bff; -fx-background-radius: 15;"
+                textFill="WHITE"
+                onAction="#onBackButtonClick">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <Label layoutX="31.0" layoutY="6.0" text="←" textFill="WHITE">
+            <font>
+                <Font size="54.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

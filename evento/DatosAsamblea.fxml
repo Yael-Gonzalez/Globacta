@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400" prefWidth="600" style="-fx-background-color: #f5f7fb;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.evento.DatosAsamblea">
+    <children>
+        <!-- Título -->
+        <Label layoutX="191.0" layoutY="14.0"
+               style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #1b1f3b;"
+               text="Datos de la asamblea" />
+
+        <!-- Nombre de la asamblea -->
+        <VBox layoutX="30.0" layoutY="55.0" prefHeight="93.0" prefWidth="253.0" spacing="5"
+              style="-fx-background-color: #f2f4f8; -fx-padding: 10; -fx-border-color: #d0d7e2; -fx-border-radius: 10; -fx-background-radius: 10;">
+            <children>
+                <Label style="-fx-font-weight: bold;" text="Nombre de la asamblea" />
+                <TextField fx:id="nombreAsambleaField" promptText="Indica el nombre de la asamblea" />
+            </children>
+        </VBox>
+
+        <!-- Fecha de la asamblea -->
+        <VBox layoutX="317.0" layoutY="55.0" prefHeight="93.0" prefWidth="253.0" spacing="5"
+              style="-fx-background-color: #f2f4f8; -fx-padding: 10; -fx-border-color: #d0d7e2; -fx-border-radius: 10; -fx-background-radius: 10;">
+            <children>
+                <Label style="-fx-font-weight: bold;" text="Fecha de la asamblea" />
+                <DatePicker fx:id="fechaAsambleaPicker" promptText="Indica la fecha de la asamblea" />
+            </children>
+        </VBox>
+
+        <!-- Participantes -->
+        <VBox layoutX="30" layoutY="150" prefHeight="93.0" prefWidth="253.0" spacing="5"
+              style="-fx-background-color: #f2f4f8; -fx-padding: 10; -fx-border-color: #d0d7e2; -fx-border-radius: 10; -fx-background-radius: 10;">
+            <children>
+                <Label style="-fx-font-weight: bold;" text="Participantes de la asamblea" />
+                <TextField fx:id="participantesField" promptText="Indica el máximo de participantes" />
+            </children>
+        </VBox>
+
+        <!-- Hora de inicio -->
+        <VBox layoutX="317.0" layoutY="150" prefHeight="93.0" prefWidth="253.0" spacing="5"
+              style="-fx-background-color: #f2f4f8; -fx-padding: 10; -fx-border-color: #d0d7e2; -fx-border-radius: 10; -fx-background-radius: 10;">
+            <children>
+                <Label style="-fx-font-weight: bold;" text="Hora de inicio de la asamblea" />
+                <TextField fx:id="horaInicioField" promptText="Indica la hora de inicio" />
+            </children>
+        </VBox>
+
+        <!-- Lugar -->
+        <VBox layoutX="30.0" layoutY="246.0" prefHeight="93.0" prefWidth="253.0" spacing="5"
+              style="-fx-background-color: #f2f4f8; -fx-padding: 10; -fx-border-color: #d0d7e2; -fx-border-radius: 10; -fx-background-radius: 10;">
+            <children>
+                <Label style="-fx-font-weight: bold;" text="Lugar de la asamblea" />
+                <TextField fx:id="lugarField" promptText="Indica el lugar de la asamblea" />
+            </children>
+        </VBox>
+
+        <!-- Hora de fin -->
+        <VBox layoutX="317.0" layoutY="245.0" prefHeight="93.0" prefWidth="253.0" spacing="5"
+              style="-fx-background-color: #f2f4f8; -fx-padding: 10; -fx-border-color: #d0d7e2; -fx-border-radius: 10; -fx-background-radius: 10;">
+            <children>
+                <Label style="-fx-font-weight: bold;" text="Hora de fin de la asamblea" />
+                <TextField fx:id="horaFinField" promptText="Indica la hora de fin" />
+            </children>
+        </VBox>
+
+        <!-- Botón confirmar -->
+        <Button fx:id="editarButton"
+                layoutX="240.0"
+                layoutY="350.0"
+                prefWidth="120"
+                style="-fx-background-color: #1b72e8; -fx-text-fill: white; -fx-background-radius: 10;"
+                text="Confirmar"
+                onAction="#onConfirmar" />
+
+        <!-- Botón regresar -->
+        <Button fx:id="backButton"
+                graphicTextGap="10.0"
+                layoutX="27.0"
+                layoutY="4.0"
+                mnemonicParsing="false"
+                prefHeight="47.0"
+                prefWidth="49.0"
+                style="-fx-background-color: #007bff; -fx-background-radius: 15;"
+                textFill="WHITE"
+                onAction="#onBackButtonClick">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+
+        <Label layoutX="29.0" layoutY="-15.0" text="←" textFill="WHITE">
+            <font>
+                <Font size="54.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
