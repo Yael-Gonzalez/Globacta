@@ -46,6 +46,7 @@ public class AsambleasController {
             stage.show();
         }catch (Exception e){
             e.printStackTrace();
+            okoko
 
         }
     }
