@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <!-- Botón de regresar -->
+        <Button fx:id="btnRegresar" layoutX="20" layoutY="20" onAction="#regresar" prefHeight="32.0" prefWidth="47.0" style="-fx-background-color: #007bff; -fx-background-radius: 10;" text="←" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="15.0" />
+         </font></Button>
+
+
+        <!-- Título -->
+        <Label layoutX="270" layoutY="30" style="-fx-font-size: 26px; -fx-font-weight: bold;" text="Editar Participante" />
+
+        <!-- Contenedor gris con bordes redondeados -->
+        <VBox layoutX="80" layoutY="80" prefHeight="275.0" prefWidth="605.0" spacing="30" style="-fx-background-color: #e0e0e0; -fx-background-radius: 20; -fx-padding: 30;" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0">
+            <children>
+
+                <!-- Grid de campos -->
+                <GridPane hgap="20" vgap="20">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="RIGHT" minWidth="200" />
+                        <ColumnConstraints minWidth="300" />
+                    </columnConstraints>
+
+                    <!-- Número -->
+                    <Label text="Número del participante:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                    <TextField fx:id="numeroField" promptText="Número del participante" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                    <!-- Nombre -->
+                    <Label text="Nombre del participante:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                    <TextField fx:id="nombreField" promptText="Nombre del participante" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                    <!-- Escuela -->
+                    <Label text="Escuela que representa:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                    <TextField fx:id="escuelaField" promptText="Escuela que representa" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                    <!-- Rol -->
+                    <Label text="Rol que desempeña:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                    <TextField fx:id="rolField" promptText="Rol que desempeña" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+               <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+               </rowConstraints>
+                </GridPane>
+
+                <!-- Botones alineados abajo -->
+                <HBox alignment="CENTER" spacing="40">
+                    <Button fx:id="cancelarBtn" prefWidth="120" style="-fx-background-color: #007bff; -fx-text-fill: white;" text="Cancelar" />
+                    <Button fx:id="aceptarBtn" prefWidth="120" style="-fx-background-color: #007bff; -fx-text-fill: white;" text="Aceptar" />
+                    <Button fx:id="eliminarBtn" prefWidth="120" style="-fx-background-color: #007bff; -fx-text-fill: white;" text="Eliminar" />
+                </HBox>
+
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400" prefWidth="600" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <!-- Botón de regresar -->
+        <Button fx:id="btnRegresar" layoutX="20" layoutY="20" onAction="#regresar" prefHeight="32.0" prefWidth="47.0" style="-fx-background-color: #007bff; -fx-background-radius: 10;" text="←" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="15.0" />
+         </font></Button>
+
+        <!-- Título -->
+        <Label layoutX="180" layoutY="20" style="-fx-font-size: 22px; -fx-font-weight: bold;" text="Crear nueva asamblea" />
+
+        <!-- Panel contenedor -->
+        <VBox layoutX="40" layoutY="60" prefWidth="520" spacing="10">
+            <children>
+
+                <GridPane hgap="10" vgap="10">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="RIGHT" minWidth="120" />
+                        <ColumnConstraints minWidth="300" />
+                    </columnConstraints>
+
+                    <!-- Nombre -->
+                    <Label text="Nombre:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                    <TextField fx:id="nombreField" promptText="Nombre de asamblea" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                    <!-- Participantes -->
+                    <Label text="Participantes:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                    <TextField fx:id="participantesField" promptText="Número máximo de los participantes" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                    <!-- Lugar -->
+                    <Label text="Lugar:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                    <TextField fx:id="lugarField" promptText="Lugar de asamblea" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                    <!-- Fecha -->
+                    <Label text="Fecha:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                    <DatePicker fx:id="fechaPicker" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+                    <!-- Hora de inicio -->
+                    <Label text="Hora de inicio:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                    <TextField fx:id="horaInicioField" promptText="Hora de inicio" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+                    <!-- Hora de fin -->
+                    <Label text="Hora de fin:" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                    <TextField fx:id="horaFinField" promptText="Hora de fin" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+               <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+               </rowConstraints>
+                </GridPane>
+
+                <!-- Importar archivo -->
+                <Label style="-fx-font-weight: bold;" text="Importar datos de participantes" />
+                <Button fx:id="importarArchivoBtn" maxWidth="200" prefHeight="37.0" prefWidth="200.0" text="Importar el archivo" />
+
+                <!-- Botón de crear asamblea -->
+                <Button fx:id="crearAsambleaBtn" alignment="CENTER" maxWidth="150" style="-fx-background-color: #007bff; -fx-text-fill: white;" text="Crear Asamblea">
+               <VBox.margin>
+                  <Insets left="300.0" />
+               </VBox.margin></Button>
+
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
