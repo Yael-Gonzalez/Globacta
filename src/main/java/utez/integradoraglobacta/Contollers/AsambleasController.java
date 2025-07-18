@@ -47,7 +47,6 @@ public class AsambleasController {
         }catch (Exception e){
             e.printStackTrace();
 
-            huhhuh
         }
     }
 }
