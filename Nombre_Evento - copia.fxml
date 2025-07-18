@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx"
+            fx:controller="com.example.evento.DetalleEventoController"
+            prefWidth="600.0" prefHeight="400.0"
+            style="-fx-background-color: #f5f7fb;">
+
+    <children>
+        <!-- Título principal -->
+        <Label layoutX="30" layoutY="20" text="Nombre del evento"
+               style="-fx-font-size: 26px; -fx-font-weight: bold;" />
+
+        <!-- Contenedor principal -->
+        <AnchorPane layoutX="30" layoutY="70" prefWidth="540" prefHeight="280"
+                    style="-fx-background-color: #dbe0e6; -fx-background-radius: 20;">
+            <children>
+
+                <!-- Descripción e imagen -->
+                <VBox layoutX="30" layoutY="20" spacing="10">
+                    <children>
+                        <Label text="Descripción"
+                               style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+                        <Label fx:id="lblDescripcion"
+                               text="Muestra la descripción del evento e imagen del evento"
+                               wrapText="true" prefWidth="200" />
+                        <ImageView fx:id="imgEvento"
+                                   fitWidth="200" fitHeight="100" preserveRatio="true" />
+                    </children>
+                </VBox>
+
+                <!-- Información lateral -->
+                <VBox layoutX="300" layoutY="20" spacing="12">
+                    <children>
+                        <!-- Lugar -->
+                        <AnchorPane prefWidth="200" prefHeight="50"
+                                    style="-fx-background-color: white; -fx-background-radius: 12;">
+                            <children>
+                                <Label layoutX="10" layoutY="5" text="Lugar de evento"
+                                       style="-fx-font-weight: bold;" />
+                                <Label fx:id="lblLugar" layoutX="10" layoutY="25"
+                                       text="Indica lugar del evento" />
+                            </children>
+                        </AnchorPane>
+
+                        <!-- Fecha de inicio -->
+                        <AnchorPane prefWidth="200" prefHeight="50"
+                                    style="-fx-background-color: white; -fx-background-radius: 12;">
+                            <children>
+                                <Label layoutX="10" layoutY="5" text="Fecha de Inicio"
+                                       style="-fx-font-weight: bold;" />
+                                <Label fx:id="lblFechaInicio" layoutX="10" layoutY="25"
+                                       text="Indica la fecha de inicio" />
+                            </children>
+                        </AnchorPane>
+
+                        <!-- Fecha de fin -->
+                        <AnchorPane prefWidth="200" prefHeight="50"
+                                    style="-fx-background-color: white; -fx-background-radius: 12;">
+                            <children>
+                                <Label layoutX="10" layoutY="5" text="Fecha de Fin"
+                                       style="-fx-font-weight: bold;" />
+                                <Label fx:id="lblFechaFin" layoutX="10" layoutY="25"
+                                       text="Indica la fecha de fin" />
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </VBox>
+
+                <!-- Botones -->
+                <Button fx:id="btnEditarEvento"
+                        layoutX="30" layoutY="220"
+                        text="Editar evento"
+                        prefWidth="130" prefHeight="40"
+                        onAction="#"
+                        style="-fx-background-color: #007bff; -fx-text-fill: white; -fx-background-radius: 10;" />
+
+                <Button fx:id="btnVerAsambleas"
+                        layoutX="300" layoutY="230"
+                        text="Ver Asambleas Disponibles"
+                        prefWidth="200" prefHeight="40"
+                        onAction="#"
+                        style="-fx-background-color: #007bff; -fx-text-fill: white; -fx-background-radius: 20;" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
