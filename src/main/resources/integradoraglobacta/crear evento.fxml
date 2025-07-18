@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="root" prefHeight="400" prefWidth="600" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="utez.integradoraglobacta.Contollers.EventoController">
+    <children>
+        <!-- Contenedor principal -->
+        <VBox layoutX="20.0" layoutY="51.0" prefWidth="560" spacing="12" style="-fx-background-color: #d9dbe0; -fx-background-radius: 15; -fx-padding: 20;">
+            <children>
+                <GridPane hgap="10" vgap="8">
+                    <columnConstraints>
+                        <ColumnConstraints minWidth="100" />
+                        <ColumnConstraints minWidth="280" />
+                        <ColumnConstraints minWidth="20" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                    </rowConstraints>
+                    <children>
+                        <Label text="Nombre" />
+                        <TextField fx:id="txtNombre" prefHeight="39.0" prefWidth="444.0" promptText="Nombre del evento" GridPane.columnIndex="1" />
+
+                        <Label text="Lugar" GridPane.rowIndex="1" />
+                        <TextField fx:id="txtLugar" promptText="Lugar" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                        <Label text="Inicio" GridPane.rowIndex="2" />
+                        <TextField fx:id="txtFechaInicio" promptText="Inicio" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                        <Label text="Término" GridPane.rowIndex="3" />
+                        <TextField fx:id="txtFechaFin" promptText="Fin" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+                        <Label text="Descripción" GridPane.rowIndex="4" />
+                        <TextField fx:id="txtDescripcion" promptText="Descripción" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                    </children>
+                </GridPane>
+
+                <HBox alignment="CENTER_LEFT" spacing="10">
+                    <children>
+                        <Button fx:id="btnImportarImagen" onAction="#onImportarImagen" prefWidth="200" style="-fx-border-style: dashed; -fx-background-color: white;" text="Insertar imagen" />
+                    </children>
+                </HBox>
+
+                <HBox alignment="CENTER_RIGHT">
+                    <children>
+                        <Button fx:id="btnCrearEvento" onAction="#onCrearEvento" prefHeight="39.0" prefWidth="135.0" style="-fx-background-color: #007BFF; -fx-text-fill: white; -fx-background-radius: 8;" text="Crear Evento" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+
+        <Label layoutX="209.0" layoutY="11.0" style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Crear nuevo evento" />
+
+        <Button fx:id="btnBack" graphicTextGap="10.0" layoutX="21.0" layoutY="5.0" mnemonicParsing="false" onAction="#onBack" prefHeight="39.0" prefWidth="45.0" style="-fx-background-color: #007bff; -fx-background-radius: 15;" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+
+        <Label layoutX="34.0" layoutY="10.0" prefHeight="26.0" prefWidth="32.0" text="←" textFill="WHITE">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

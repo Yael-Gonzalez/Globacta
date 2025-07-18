@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="593.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="utez.integradoraglobacta.Contollers.Inicio" fx:id="root">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="612.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagenes/mun.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400" prefWidth="600" style="-fx-background-color: #f5f5f5;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="utez.integradoraglobacta.Contollers.TablaParticipantes">
+
+    <!-- Botón de regresar -->
+    <Button fx:id="btnRegresar" layoutX="20" layoutY="20" onAction="#regresar" prefHeight="32.0" prefWidth="47.0" style="-fx-background-color: #007bff; -fx-background-radius: 10;" text="←" textFill="WHITE" />
+
+    <!-- Título -->
+    <Label fx:id="tituloPrincipal" layoutX="79.0" layoutY="16.0" prefHeight="41.0" prefWidth="198.0" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #333333;" text="Tabla de participantes" />
+    <VBox layoutX="80" layoutY="68.0" prefHeight="287.0" prefWidth="590.0" spacing="30" style="-fx-background-color: #e0e0e0; -fx-background-radius: 20; -fx-padding: 30;" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0">
+
+    <!-- Tabla de participantes -->
+    <TableView fx:id="tablaParticipantes" layoutX="10" layoutY="50" prefHeight="180.0" prefWidth="494.0" style="-fx-border-color: #7777; -fx-border-radius: 5;" AnchorPane.leftAnchor="36.0" AnchorPane.rightAnchor="36.0">
+        <columns>
+            <TableColumn fx:id="colNumero" prefWidth="21.0" style="-fx-background-color: #007bff;" text="#" />
+            <TableColumn fx:id="colNombreEstudiante" prefWidth="129.0" style="-fx-background-color: #007bff;" text="Nombre el estudiante" />
+            <TableColumn fx:id="colNombreEscuela" minWidth="0.0" prefWidth="130.0" style="-fx-background-color: #007bff;" text="Nombre de la escuela" />
+            <TableColumn fx:id="colClaveEscuela" prefWidth="119.0" style="-fx-background-color: #007bff;" text="Clave de la escuela" />
+            <TableColumn fx:id="colRol" prefWidth="79.0" style="-fx-background-color: #007bff;" text="Rol" />
+        </columns>
+    </TableView>
+
+    <!-- Pie de página -->
+    <Label fx:id="instruccion" layoutX="150" layoutY="360" style="-fx-font-size: 12px; -fx-text-fill: #777777;" text="Selecciona dos veces el participante a editar*" />
+    </VBox>
+</AnchorPane>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400" prefWidth="600"
+            xmlns="http://javafx.com/javafx/17.0.12"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="utez.integradoraglobacta.Contollers.VistaPrincipalController" fx:id="root">
+
+    <!-- Botón flotante para agregar evento -->
+    <Button fx:id="btnAgregar"
+            layoutX="540.0"
+            layoutY="2.0"
+            prefHeight="48.0"
+            prefWidth="45.0"
+            style="-fx-background-radius: 16; -fx-background-color: #007bff; -fx-font-size: 22px;"
+            text="+"
+            textAlignment="CENTER"
+            textFill="WHITE"
+            onAction="#onAgregarEvento">
+        <font>
+            <Font size="64.0" />
+        </font>
+    </Button>
+
+    <!-- Tarjeta principal -->
+    <Pane fx:id="tarjetaPrincipal"
+          layoutX="20"
+          layoutY="60"
+          prefHeight="136.0"
+          prefWidth="560"
+          style="-fx-background-color: #f0f0f0; -fx-background-radius: 10;" onMouseClicked="#seleccionarEvento">
+        <children>
+            <Label fx:id="lblNombrePrincipal"
+                   layoutX="20"
+                   layoutY="20"
+                   style="-fx-font-weight: bold; -fx-font-size: 14px;"
+                   text="Nombre del evento" />
+            <Label fx:id="lblDescripcionPrincipal"
+                   layoutX="20"
+                   layoutY="45"
+                   style="-fx-text-fill: #555;"
+                   text="Descripción del evento" />
+            <ImageView fx:id="imgPrincipal"
+                       fitHeight="115.0"
+                       fitWidth="165.0"
+                       layoutX="329.0"
+                       layoutY="11.0"
+                       pickOnBounds="true"
+                       preserveRatio="true" />
+        </children>
+    </Pane>
+
+    <!-- Tarjeta mini 1 -->
+    <Pane fx:id="tarjetaMini1"
+          layoutX="20.0"
+          layoutY="211.0"
+          prefHeight="136.0"
+          prefWidth="260"
+          style="-fx-background-color: #eaeaea; -fx-background-radius: 10;">
+        <children>
+            <Label fx:id="lblNombreMini1"
+                   layoutX="10"
+                   layoutY="10"
+                   style="-fx-font-weight: bold;"
+                   text="Nombre del evento" />
+            <Label fx:id="lblDescripcionMini1"
+                   layoutX="10"
+                   layoutY="30"
+                   style="-fx-text-fill: #666;"
+                   text="Descripción del evento" />
+            <ImageView fx:id="imgMini1"
+                       fitHeight="88.0"
+                       fitWidth="109.0"
+                       layoutX="137.0"
+                       layoutY="24.0"
+                       pickOnBounds="true"
+                       preserveRatio="true" />
+        </children>
+    </Pane>
+
+    <!-- Tarjeta mini 2 -->
+    <Pane fx:id="tarjetaMini2"
+          layoutX="320.0"
+          layoutY="211.0"
+          prefHeight="136.0"
+          prefWidth="260"
+          style="-fx-background-color: #eaeaea; -fx-background-radius: 10;">
+        <children>
+            <Label fx:id="lblNombreMini2"
+                   layoutX="10"
+                   layoutY="10"
+                   style="-fx-font-weight: bold;"
+                   text="Nombre del evento" />
+            <Label fx:id="lblDescripcionMini2"
+                   layoutX="10"
+                   layoutY="30"
+                   style="-fx-text-fill: #666;"
+                   text="Descripción del evento" />
+            <ImageView fx:id="imgMini2"
+                       fitHeight="96.0"
+                       fitWidth="109.0"
+                       layoutX="137.0"
+                       layoutY="20.0"
+                       pickOnBounds="true"
+                       preserveRatio="true" />
+        </children>
+    </Pane>
+
+</AnchorPane>
