@@ -24,7 +24,6 @@ public class AsambleasController {
     @FXML
     private void abrirFormulario(ActionEvent event) {
         try {
-            ko
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/integradoraglobacta/CrearAsambleas.fxml"));
             Parent Evento = loader.load();
             Stage stage = (Stage) root.getScene().getWindow();
