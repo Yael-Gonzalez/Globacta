@@ -38,7 +38,6 @@ public class AsambleasController {
     @FXML
     private void regresar(ActionEvent event) {
         try {
-            jijikhac
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/integradoraglobacta/Nombre_Evento.fxml"));
             Parent Evento = loader.load();
             Stage stage = (Stage) root.getScene().getWindow();
