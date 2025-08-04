@@ -22,7 +22,7 @@ public class AsambleaDao {
           ps.setString(3,asamblea.getLugar_Asamblea());
           ps.setDate(4,java.sql.Date.valueOf(asamblea.getFecha_Asamblea()));
           ps.setTimestamp(5,asamblea.getHora_inicio_Asamblea());
-          hola:)
+
 
 
 
